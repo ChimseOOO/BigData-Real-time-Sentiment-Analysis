@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="row justify-content-center"> <!-- Center-align the Average analysis results heading -->
+            <div class="col-md-12 text-center"> <!-- Add 'text-center' class to center-align the content -->
+                <h4>Total positive: {{ positive_count }} - Total negative: {{ negative_count }}</h4>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- Center-align the table -->
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            {% for header in headers %}
+                            <th>{{ header }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in rows %}
+                        <tr>
+                            {% for value in row %}
+                            <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
