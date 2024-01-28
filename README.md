@@ -5,7 +5,7 @@ It's a project using bigdata technique, in here we use spark and deep learning, 
 * Keywords:
     - Bigdata, NLP, Sentiment Analysis, SparkNLP, Opinion mining.
 * Technique:
-- BERT, LSTM, MLP, HashingTF-IDF-Random Forest,...
+    - BERT, LSTM, MLP, HashingTF-IDF-Random Forest,...
 * Dataset:
   - Amazon product reviews.
 
